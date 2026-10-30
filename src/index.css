@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
+@import "tailwindcss";
+
+@font-face {
+    font-family: "ArmCoronet";
+    src: url("./assets/fonts/ArmCoronetU.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+  }
+
+@layer base {
+  :root {
+    --bg-card: #FFFFFF;
+    --color-text: #2C2622;
+    --color-muted: #7E746C;
+    --color-accent: #876E59;
+    --color-accent-light: #C4B19D;
+    --color-border: #E5DDD3;
+  }
+
+  body {
+    font-family: 'Noto Sans Armenian', 'Montserrat', -apple-system, BlinkMacSystemFont, sans-serif;
+    color: var(--color-text);
+    letter-spacing: 0.02em;
+    background: white;
+  }
+
+  .arm-coronet {
+    font-family: "ArmCoronet", serif;
+  }
+
+  .parisienne {
+    font-family: 'Parisienne', cursive;
+  }
+
+  h1, h2, h3, h4, .font-serif-am {
+    font-family: 'ArmCoronet', 'Cormorant Garamond', Georgia, serif;
+    letter-spacing: 0.01em;
+  }
+
+  .font-script-custom {
+    font-family: 'Alex Brush', 'Cormorant Garamond', cursive;
+  }
+}
+
+/* Elaris refined paper & typography styles */
+.elaris-container {
+  max-width: 440px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.star {
+  clip-path: polygon(
+    50% 0%,
+    65% 35%,
+    100% 50%,
+    65% 65%,
+    50% 100%,
+    35% 65%,
+    0% 50%,
+    35% 35%
+  );
+}
+
+.paper-card {
+  box-shadow: 0 4px 25px -4px rgba(100, 85, 75, 0.06), 0 1px 3px rgba(0, 0, 0, 0.03);
+}
+
+.delicate-border {
+  border-color: rgba(213, 203, 192, 0.65);
+}
+
+/* Subtle gentle bounce for invitation down arrow */
+@keyframes moveUpDown {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(8px);
+  }
+}
+
+.animate-moveUpDown {
+  animation: moveUpDown 2s ease-in-out infinite;
+}
+
+/* Calendar month styling */
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 6px;
+  text-align: center;
+}
+
+.calendar-day-special {
+  position: relative;
+  font-weight: 600;
+  color: #FFFFFF;
+  z-index: 1;
+}
+
+.calendar-day-special::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 28px;
+  height: 28px;
+  border-radius: 9999px;
+  background-color: #876E59;
+  z-index: -1;
+  box-shadow: 0 2px 8px rgba(135, 110, 89, 0.25);
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
