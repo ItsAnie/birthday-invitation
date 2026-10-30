@@ -1,6 +1,5 @@
 
 import React, { useState, useEffect, useRef } from "react";
-import img from "../assets/image.png";
 
 export default function LocationSection({ venue, photos }) {
   const [copied, setCopied] = useState(false);
