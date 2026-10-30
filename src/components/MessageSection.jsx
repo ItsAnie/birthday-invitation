@@ -3,7 +3,7 @@ import bg_img from '../assets/invite-bg.jpg'
 
 export default function MessageSection({ message }) {
   return (
-    <section className="py-12 text-center h-full flex flex-col justify-center bg-cover bg-no-repeat items-center" style={{
+    <section className="pt-12 text-center h-full flex flex-col justify-center bg-cover bg-no-repeat items-center" style={{
                       backgroundImage: `url(${bg_img})`,
                       backgroundSize: '100% 100%'
                     }} >

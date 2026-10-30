@@ -74,7 +74,7 @@ export default function SaveTheDateSection({
         {photos?.celebrationArch1 && (
           <div
             style={{ transitionDelay: "100ms" }}
-            className={`mx-auto my-14 w-full max-w-[310px] sm:max-w-[350px] transition-all duration-1000 ease-out ${
+            className={`mx-auto mb-14 w-full max-w-[310px] sm:max-w-[350px] transition-all duration-1000 ease-out ${
               isVisible
                 ? "opacity-100 translate-y-0"
                 : "opacity-0 translate-y-10"

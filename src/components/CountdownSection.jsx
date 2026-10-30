@@ -79,7 +79,7 @@ export default function CountdownSection({ celebrant, event }) {
     <section
       ref={sectionRef}
       id="about"
-      className="pt-10 pb-12 text-center bg-white overflow-hidden"
+      className="py-10 text-center bg-white overflow-hidden"
     >
       <div className="elaris-container">
 
