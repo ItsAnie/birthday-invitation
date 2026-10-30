@@ -21,7 +21,6 @@ export default function HeroSection({ celebrant, event, photos }) {
       className="relative flex flex-col items-center justify-center pt-8 pb-12 text-center overflow-hidden h-screen bg-no-repeat"
       style={{
         backgroundImage: `url(${bg_img})`,
-        backgroundSize: "100% 100%",
         backgroundPosition: "center",
       }}
     >
