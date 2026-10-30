@@ -143,7 +143,7 @@ export default function LocationSection({ venue, photos }) {
           style={reveal(1100).style}
           className={`mt-12 mb-6 ${reveal(1100).className}`}
         >
-          <h2 className="font-serif-am text-2xl sm:text-3xl text-[#876E59] font-normal leading-relaxed whitespace-pre-line">
+          <h2 className="font-serif-am text-2xl sm:text-3xl text-[#4A423D] font-normal leading-relaxed whitespace-pre-line">
             {venue.closingWarmQuote || "Եկեք միասին կիսենք\nուրախությունն ու ժպիտները"}
           </h2>
         </div>

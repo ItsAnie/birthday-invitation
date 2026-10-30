@@ -153,7 +153,7 @@ export default function SaveTheDateSection({
 
                     {isHighlight && (
                       <span
-                        className={`absolute h-[30px] top-2 inset-0 bg-contain bg-center bg-no-repeat transition-all duration-1000 ease-out ${
+                        className={`absolute top-2 inset-0 bg-contain bg-center bg-no-repeat transition-all duration-1000 ease-out ${
                           isVisible
                             ? "scale-100 opacity-100"
                             : "scale-50 opacity-0"
@@ -163,7 +163,7 @@ export default function SaveTheDateSection({
                     )}
 
                     <span
-                      className={`relative z-10 font-serif-am text-base sm:text-lg ${
+                      className={`relative z-10 font-serif-am text-xl sm:text-lg ${
                         isHighlight
                           ? "text-white"
                           : "text-[#4a423d]"
